@@ -1,2 +1,2 @@
 #!/bin/bash
-chown -R vincent:staff filename.ext  
+chown -R vincent:staff . 
