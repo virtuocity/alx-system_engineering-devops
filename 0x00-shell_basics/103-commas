@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -amS [! . ..[alpha]]
+ls -map|sort -d
