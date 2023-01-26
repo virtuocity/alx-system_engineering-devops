@@ -11,3 +11,8 @@ https://tldp.org/LDP/abs/html/comparison-ops.html
 https://tldp.org/LDP/abs/html/fto.html  
 + make your scripts portable   
 https://www.cyberciti.biz/tips/finding-bash-perl-python-portably-using-env.html   
++ Shellcheck   
+https://github.com/koalaman/shellcheck    
++ Create a SSH RSA key pai
+https://askubuntu.com/questions/61557/how-do-i-set-up-ssh-authentication-keys   
+
