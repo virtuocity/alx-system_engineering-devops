@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 # Print Fizz Buzz or 1 to 100
-for ((i = 1; i <= 100; i++))
+for ((count = 1; count <= 100; count++))
 do
-    if ! ((i%15))
+    if ! ((count%15))
     then
 	echo FizzBuzz
-    elif ! ((i%3))
+    elif ! ((count%3))
     then
 	echo Fizz
-    elif ! ((i%5))
+    elif ! ((count%5))
     then
 	echo Buzz
     else
-	echo $i
+	echo $count
     fi
 done
