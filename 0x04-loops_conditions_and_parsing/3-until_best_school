@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # prints string 10 times with until
-counter=1
-until [ $counter -gt 10 ]
+count=1
+until [ $count -gt 10 ]
 do
 echo Best School
-((counter++))
+((count++))
 done
