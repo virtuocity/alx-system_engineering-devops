@@ -1,1 +1,1 @@
-Basic shell commands
+Introduction to Shell BinBash Permissions
