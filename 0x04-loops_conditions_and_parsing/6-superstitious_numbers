@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# Display 1 to 20 and superstitious numbers
+count=1
+while [ $count -le 20 ]
+do
+if [ $count == 4 ]
+then
+    echo $count
+    echo bad luck from China
+    ((count++))
+elif [ $count == 9 ]
+then
+    echo $count
+    echo bad luck from Japan
+    ((count++))
+elif [ $count == 17 ]
+then
+    echo $count
+    echo bad luck from Italy
+    ((count++))
+else
+    echo $count
+    ((count++))
+fi
+done
