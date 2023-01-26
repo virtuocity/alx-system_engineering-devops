@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# A while script that displays Best school with good luck
+#and bad luck
+count=1
+while [ $count -le 10 ]
+do
+if [ $count == 4 ]
+then
+    echo bad luck
+    ((count++))
+elif [ $count == 8 ]
+then
+    echo good luck
+    ((count++))
+else
+    echo Best School
+    ((count++))
+fi
+done
