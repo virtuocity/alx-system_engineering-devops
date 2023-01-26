@@ -4,7 +4,7 @@ Run the following command to create an SSH key pair. You can leave the passphras
 
     ssh-keygen -t rsa 
 
-    if [test_condition] 
+    if [ test_condition ] 
     then
     consequent_commands
     fi
