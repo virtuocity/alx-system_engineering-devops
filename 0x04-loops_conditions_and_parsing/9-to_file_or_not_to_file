@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Print information about the school file
-FILE=school
 # shellcheck disable=SC2166
+FILE=school
 if [ -e "$FILE" -o -d  "$FILE" ]
 then 
     echo school file exists
