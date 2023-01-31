@@ -1,8 +1,9 @@
 # 0x06-regular_expressions
 ## Notes
-*Super classic industry joke* 
+*Super classic industry joke*   
 Some people, when confronted with a problem, think
 “I know, I'll use regular expressions.”   Now they have two problems.  
+**A regular expression**, commonly called a *“regexp”*, is a sequence of characters that define a search pattern.  It is mainly for use in pattern matching with strings, or string matching (i.e. it operates like a “find and replace” command)   
 ## Links
 + Regular Expressions Concept  
 https://intranet.alxswe.com/concepts/29  
