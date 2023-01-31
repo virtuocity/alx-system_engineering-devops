@@ -1,5 +1,8 @@
 # 0x06-regular_expressions
 ## Notes
+        *Super classic industry joke* 
+Some people, when confronted with a problem, think
+“I know, I'll use regular expressions.”   Now they have two problems.  
 ## Links
 + Regular Expressions Concept  
 https://intranet.alxswe.com/concepts/29  
