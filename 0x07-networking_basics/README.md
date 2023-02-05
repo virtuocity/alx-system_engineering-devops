@@ -5,6 +5,14 @@ The Open Systems Interconnection model (OSI model) is a conceptual model that 'p
 ### TCP And UDP
 *TCP/IP* is a suite of protocols used by devices to communicate over the Internet and most local networks. It is named after two of it’s original protocols—the Transmission Control Protocol (TCP) and the Internet Protocol (IP). TCP provides apps a way to deliver (and receive) an ordered and error-checked stream of information packets over the network.   
 *The User Datagram Protocol (UDP)* is used by apps to deliver a faster stream of information by doing away with error-checking   
+**What they have in common**
+Both TCP and UDP are protocols used for sending bits of data—known as packets—over the Internet.
+### How TCP Works 
+TCP is the most commonly used protocol on the Internet.   
+
+When you request a web page in your browser, your computer sends TCP packets to the web server’s address, asking it to send the web page back to you. The web server responds by sending a stream of TCP packets, which your web browser stitches together to form the web page. When you click a link, sign in, post a comment, or do anything else, your web browser sends TCP packets to the server and the server sends TCP packets back.   
+
+*Note that a specific IP + port = socket.*
 ## Tasks
 ## Links 
 + OSI Model   
