@@ -2,6 +2,9 @@
 ## Notes
 ### OSI Model
 The Open Systems Interconnection model (OSI model) is a conceptual model that 'provides a common basis for the coordination of [ISO] standards development for the purpose of systems interconnection'. In the OSI reference model, the communications between a computing system are split into seven different abstraction layers: Physical, Data Link, Network, Transport, Session, Presentation, and Application.  
+### TCP And UDP
+*TCP/IP* is a suite of protocols used by devices to communicate over the Internet and most local networks. It is named after two of it’s original protocols—the Transmission Control Protocol (TCP) and the Internet Protocol (IP). TCP provides apps a way to deliver (and receive) an ordered and error-checked stream of information packets over the network.   
+*The User Datagram Protocol (UDP)* is used by apps to deliver a faster stream of information by doing away with error-checking   
 ## Tasks
 ## Links 
 + OSI Model   
