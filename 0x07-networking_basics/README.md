@@ -12,7 +12,16 @@ TCP is the most commonly used protocol on the Internet.
 
 When you request a web page in your browser, your computer sends TCP packets to the web server’s address, asking it to send the web page back to you. The web server responds by sending a stream of TCP packets, which your web browser stitches together to form the web page. When you click a link, sign in, post a comment, or do anything else, your web browser sends TCP packets to the server and the server sends TCP packets back.   
 
-*Note that a specific IP + port = socket.*
+*Note that a specific IP + port = socket.*   
+
+### Check Listening Ports with netstat
+*netstat* is a command-line tool that can provide information about network connections.  
+
+To list all TCP or UDP ports that are being listened on, including the services using the ports and the socket status use the following command:   
+
+    $sudo netstat -tunlp  
+    
+
 ## Tasks
 ## Links 
 + OSI Model   
