@@ -3,7 +3,9 @@
 ### What is localhost? 
 
 # Links
-+ Localhost
-
++ What is Localhost  
+https://en.wikipedia.org/wiki/Localhost  
++ What is 0.0.0.0  
+https://en.wikipedia.org/wiki/0.0.0.0  
 
 
