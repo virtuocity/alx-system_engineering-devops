@@ -1,0 +1,6 @@
+#!/usr/bin/env bash 
+# change hosts file 
+cp /etc/hosts ~/hosts.new
+sed -i "s/127.0.0.2/127.0.0.1/" ~/hosts.new
+sudo cp -f ~/hosts.new /etc/hosts
+
