@@ -19,6 +19,22 @@ The resolution of the name localhost to one or more IP addresses is normally con
  ### The hosts file  
  The hosts file is a plain text file that all operating systems use to translate hostnames (also known as web addresses or URLs) into IP addresses. When you type in a hostname, such as wikipedia.org, your system will look into the hosts file to get the IP address needed to connect to the appropriate server.  
 
+### ~ Home Directory
+The tilde (~) is shorthand for your home directory. It means you don’t have to type the full path to your home directory in commands. Wherever you are in the filesystem, you can use this command to go to your home directory:  
+
+### ifconfig
+Ifconfig is used to configure the kernel-resident network interfaces.  It is used at boot time to set up interfaces as necessary.  After that, it is usually only needed when debugging or when system tuning is needed.
+
+If no arguments are given, ifconfig displays the status of the currently active interfaces.  If a single interface argument is given, it displays the status of the given interface only; if a single -a argument is given, it displays the status of all interfaces, even those that are down.  Otherwise, it configures an interface.  
+### The telnet 
+The telnetcommand is used to communicate with another host using the TELNET protocol. If telnet is invoked without the host argument, it enters command mode, indicated by its prompt (telnet>). In this mode, it accepts and executes the commands listed below. If it is invoked with arguments, it performs an open command with those arguments.e.g   
+
+    telnet localhost 98
+
+### Netcat in a Server-Client Architecture
+The netcat utility can be run in the server mode on a specified port listening for incoming connections.
+
+    $ nc -l 2389
 
 # Links
 + What is Localhost  
@@ -39,3 +55,6 @@ https://linux.die.net/man/1/nc
 https://man7.org/linux/man-pages/man1/cut.1.html  
 + OSI Model   
 https://www.imperva.com/learn/application-security/osi-model/  
++ 15 Special Characters You Need to Know for Bash  
+https://www.howtogeek.com/439199/15-special-characters-you-need-to-know-for-bash/   
++ man sed  
