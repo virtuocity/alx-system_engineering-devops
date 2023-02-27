@@ -58,7 +58,7 @@ When a DNS resolver encounters a CNAME record while looking for a regular resour
     + [A](https://support.dnsimple.com/articles/a-record/)
     + [CNAME](https://en.wikipedia.org/wiki/CNAME_record)
     + [MX Record](https://en.wikipedia.org/wiki/MX_record)
-    + [TXT Record](https://en.wikipedia.org/wiki/TXT_record)
+    + [TXT Record](https://en.wikipedia.org/wiki/TXT_record)  
     Advanced:
     + [Use DNS to scale with round-robin DNS](https://www.dnsknowledge.com/whatis/round-robin-dns/)
     + [What’s an NS Record?](https://support.dnsimple.com/articles/ns-record/)
