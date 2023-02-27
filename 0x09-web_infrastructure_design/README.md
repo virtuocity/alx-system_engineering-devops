@@ -132,6 +132,19 @@ The SOA record includes the following details:
 + The upper limit in seconds before a zone is considered no longer authoritative.
 + The negative result TTL (for example, how long a resolver should consider a negative result for a subdomain to be valid before retrying).
 You can’t configure these values yourself.
+
+## Monitoring 
+Just as the heart monitor in a hospital that is making sure that a patient’s heart is beating and at the right beat, software monitoring will watch computer metrics, record them, and emit an alert if something is unusual or that could make the computer not work properly happens.
+
+*You cannot fix or improve what you cannot measure* is a famous saying in the tech industry. In the age of the data-ism, monitoring how our software systems are doing is an important thing.
+
+Web stack monitoring(what is a web stack?) can be broken down into 2 categories:
+
++ Application monitoring: getting data about your running software and making sure it is behaving as expected
++ Server monitoring: getting data about your virtual or physical server and making sure they are not overloaded (could be CPU, memory, disk or network overload)
+
+A *web stack* is the collection of software used for web development that incorporates, at a minimum, an operating system (OS), a programming language, database software and a web server.  
+
 ## Links
 + [DNS](https://intranet.alxswe.com/concepts/12)
     + [Learn everything about DNS in cartoon](https://howdns.works/)
@@ -144,8 +157,9 @@ You can’t configure these values yourself.
     + [What’s an NS Record?](https://support.dnsimple.com/articles/ns-record/)
     + [What’s an SOA Record?](https://support.dnsimple.com/articles/soa-record/)
 + [Monitoring](https://intranet.alxswe.com/concepts/13)
-+ [Web Server](https://en.wikipedia.org/wiki/Web_server)
-+ [Web server - MDN](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server)
++ Web Server
+    + [Wikipidea page- Webserver](https://en.wikipedia.org/wiki/Web_server)
+    + [Web server - MDN](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server)
 + [Network basics]()  
 + [Load balancer]()
 + [Server]()
