@@ -33,7 +33,7 @@ Once the 8 steps of the DNS lookup have returned the IP address for example.com,
 9. The browser makes a HTTP request to the IP address.
 10. The server at that IP returns the webpage to be rendered in the browser (step 10).
 
-## What’s an A record?
+### What’s an A record?
 
 An A record maps a domain name to the IP address (Version 4) of the computer hosting the domain. An A record uses a domain name to find the IP address of a computer connected to the internet
 
@@ -41,8 +41,10 @@ The A in A record stands for Address. Whenever you visit a web site, send an ema
 
 For example, to access the DNSimple website you enter www.dnsimple.com. At our name server, there’s an A record that points to the IP address 208.93.64.253. This means that a request from your browser to www.dnsimple.com is directed to the server with IP address 208.93.64.253.
 
-## CNAME Record  
+### CNAME Record  
 A Canonical Name (CNAME) record is a type of resource record in the Domain Name System (DNS) that maps one domain name (an alias) to another (the canonical name). 
+
+This can prove convenient when running multiple services (like an FTP server and a web server, each running on different ports) from a single IP address. One can, for example, use CNAME records to point ftp.example.com and www.example.com to the DNS entry for example.com, which in turn has an A record which points to the IP address. Then, if the IP address ever changes, one only has to record the change in one place within the network: in the DNS A record for example.com.
 
 When a DNS resolver encounters a CNAME record while looking for a regular resource record, it will restart the query using the canonical name instead of the original name. (If the resolver is specifically told to look for CNAME records, the canonical name (right-hand side) is returned, rather than restarting the query.)
 
@@ -50,6 +52,23 @@ When a DNS resolver encounters a CNAME record while looking for a regular resour
     --------------------------------------------------
     bar.example.com.        CNAME  foo.example.com.
     foo.example.com.        A      192.0.2.23
+
+### MX record
+A mail exchanger record (MX record) specifies the mail server responsible for accepting email messages on behalf of a domain name. It is a resource record in the Domain Name System (DNS). It is possible to configure several MX records, typically pointing to an array of mail servers for load balancing and redundancy.  
+
+Resource records are the basic information element of the Domain Name System (DNS). An MX record is one of these, and a domain may have one or more of these set up, as below:
+
+    Domain			TTL   Class    Type  Priority      Host
+    example.com.		1936	IN	MX	10         onemail.example.com.
+    example.com.		1936	IN	MX	10         twomail.example.com.
+
+The characteristic payload information of an MX record[1] is a preference value (above labelled "Priority"), and the domain name of a mailserver ("Host" above).
+
+The priority field identifies which mailserver should be preferred - in this case the values are both 10, so mail would be expected to flow evenly to both onemail.example.com and twomail.example.com - a common configuration. The host name must map directly to one or more address records (A, or AAAA) in the DNS, and must not point to any CNAME records.[2]
+
+When an e-mail message is sent through the Internet, the sending mail transfer agent (MTA) queries the Domain Name System for the MX records of each recipient's domain name. This query returns a list of host names of mail exchange servers accepting incoming mail for that domain and their preferences. The sending agent then attempts to establish an SMTP connection, trying the host with the lowest "Priority" value first. The system allows high-availability clusters of mail gateways to be built for one domain if necessary.[3]
+
+The MX mechanism does not grant the ability to provide mail service on alternative port numbers, nor does it provide the ability to distribute mail delivery across a set of unequal-priority mail servers by assigning a weighting value to each one
 
 ## Links
 ### Concepts
