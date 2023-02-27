@@ -66,6 +66,6 @@ When a DNS resolver encounters a CNAME record while looking for a regular resour
 + [Monitoring](https://intranet.alxswe.com/concepts/13)
 + [Web Server](https://en.wikipedia.org/wiki/Web_server)
 + [Web server - MDN](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server)
-Network basics
-Load balancer
-Server
++ [Network basics]()  
++ [Load balancer]()
++ [Server]()
