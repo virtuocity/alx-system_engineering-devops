@@ -41,6 +41,16 @@ The A in A record stands for Address. Whenever you visit a web site, send an ema
 
 For example, to access the DNSimple website you enter www.dnsimple.com. At our name server, there’s an A record that points to the IP address 208.93.64.253. This means that a request from your browser to www.dnsimple.com is directed to the server with IP address 208.93.64.253.
 
+## CNAME Record  
+A Canonical Name (CNAME) record is a type of resource record in the Domain Name System (DNS) that maps one domain name (an alias) to another (the canonical name). 
+
+When a DNS resolver encounters a CNAME record while looking for a regular resource record, it will restart the query using the canonical name instead of the original name. (If the resolver is specifically told to look for CNAME records, the canonical name (right-hand side) is returned, rather than restarting the query.)
+
+        NAME                    TYPE   VALUE
+    --------------------------------------------------
+    bar.example.com.        CNAME  foo.example.com.
+    foo.example.com.        A      192.0.2.23
+
 ## Links
 ### Concepts
 + [DNS](https://intranet.alxswe.com/concepts/12)
