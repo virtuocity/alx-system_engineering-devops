@@ -144,6 +144,21 @@ Web stack monitoring(what is a web stack?) can be broken down into 2 categories:
 + Server monitoring: getting data about your virtual or physical server and making sure they are not overloaded (could be CPU, memory, disk or network overload)
 
 A *web stack* is the collection of software used for web development that incorporates, at a minimum, an operating system (OS), a programming language, database software and a web server.  
+## Web Server 
+### What is a web server?
+The term web server can refer to hardware or software, or both of them working together.
+
+1. On the hardware side, a web server is a computer that stores web server software and a website's component files (for example, HTML documents, images, CSS stylesheets, and JavaScript files). A web server connects to the Internet and supports physical data interchange with other devices connected to the web.
+
+2. On the software side, a web server includes several parts that control how web users access hosted files. At a minimum, this is an HTTP server. An HTTP server is software that understands URLs (web addresses) and HTTP (the protocol your browser uses to view webpages). An HTTP server can be accessed through the domain names of the websites it stores, and it delivers the content of these hosted websites to the end user's device.
+
+At the most basic level, whenever a browser needs a file that is hosted on a web server, the browser requests the file via HTTP. When the request reaches the correct (hardware) web server, the (software) HTTP server accepts the request, finds the requested document, and sends it back to the browser, also through HTTP. (If the server doesn't find the requested document, it returns a 404 response instead.)  
+
+
+### What is a server?
+In computing, a server is a piece of computer hardware or software (computer program) that provides functionality for other programs or devices, called "clients". This architecture is called the client–server model. Servers can provide various functionalities, often called "services", such as sharing data or resources among multiple clients, or performing computation for a client. A single server can serve multiple clients, and a single client can use multiple servers. A client process may run on the same device or may connect over a network to a server on a different device.Typical servers are database servers, file servers, mail servers, print servers, web servers, game servers, and application servers.  
+
+Strictly speaking, the term server refers to a computer program or process (running program). Through metonymy, it refers to a device used for (or a device dedicated to) running one or several server programs. On a network, such a device is called a host.  
 
 ## Links
 + [DNS](https://intranet.alxswe.com/concepts/12)
