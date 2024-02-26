@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Print Fizz Buzz or 1 to 100
+for ((count = 1; count <= 100; count++))
+do
+    if ! ((count%15))
+    then
+	echo FizzBuzz
+    elif ! ((count%3))
+    then
+	echo Fizz
+    elif ! ((count%5))
+    then
+	echo Buzz
+    else
+	echo $count
+    fi
+done
+
