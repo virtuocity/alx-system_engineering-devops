@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-# Display items in current working directory
-LIST="$(ls .)"
-for file in $LIST
-do 
-echo "$file" | cut -d- -f2
-done
