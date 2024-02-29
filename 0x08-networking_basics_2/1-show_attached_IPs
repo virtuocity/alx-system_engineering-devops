@@ -1,4 +1,0 @@
-#!/usr/bin/env bash 
-# Display all active IPV4 IPs
-ifconfig | grep 'inet' | awk '{print $2}' | cut -d ":" -f 2
-

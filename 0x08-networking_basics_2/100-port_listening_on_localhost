@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# Listen on localhost
-nc -l 98
-
